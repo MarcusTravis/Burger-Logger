@@ -22,8 +22,8 @@
     <script>
         $(document).ready(function () {
             $("#devourBtn").on("click", function () {
-                event.preventDefault();
                 console.log("Devour button clicked");
+                event.preventDefault();
                 const burgerId = $(this).data("id");
                 const devoured = $(this).data("eaten");
                 const burgerUpdate = { devoured: devoured };

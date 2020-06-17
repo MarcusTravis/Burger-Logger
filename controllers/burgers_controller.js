@@ -24,10 +24,10 @@ router.get("/", function (req, res) {
     });
   });
   
-  router.put("/api/burgers/:id", function (req, res) {
+  router.put("/burgers/:id", function (req, res) {
     burger.updateOne(req.params.id, function (result) {
-      console.log("result", result);
-      res.send(true).status(200);
+      console.log(result);
+      res.status(200).end();
     });
   });
 

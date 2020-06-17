@@ -4,16 +4,14 @@
   <div class="row">
 
     <div class="col-md-4 text-center align-self-center" >
-        <p class="h2 mb-4">
-            Burgers on the menu!:
-        </p>
+      <p class="h2 mb-4">Burgers on the menu!:</p>
       <ul style="list-style-type: none;" class="h2">
         {{#each burgers}}
         {{#unless this.devoured}}
         <li>
-          <p>{{this.burger_name}}
+          <div>{{this.burger_name}}
             <button id="devourBtn" data-id={{this.id}} class="devour rounded bg-danger h4" type="submit">Devour</button>
-          </p>
+          </div>
         </li>
         {{/unless}}
         {{/each}}
